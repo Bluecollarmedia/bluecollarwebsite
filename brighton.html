@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brighton Lawn + Landscape App — Blue Collar Media | New Jersey</title>
+  <meta name="description" content="Brighton Lawn + Landscape: a management app for landscaping and snow-removal companies. Scheduling, time clock, photos, Snow Mode and a public forecast. Built by Blue Collar Media.">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="brighton.css">
+</head>
+<body>
+
+<div id="prog"></div>
+
+<!-- ── NAV ── -->
+<nav id="nav">
+  <div class="logo-wrap">
+    <a href="index.html"><img src="logo.png" alt="Blue Collar Media"></a>
+  </div>
+  <a href="index.html" class="nav-back" aria-label="Back to home">&#8592; Home</a>
+  <button class="nav-burger" id="navBurger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="web.html">Websites</a></li>
+    <li><a href="brighton.html">Apps</a></li>
+    <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mm-close" id="mmClose" aria-label="Close menu">
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+      <line x1="2" y1="2" x2="16" y2="16"/>
+      <line x1="16" y1="2" x2="2" y2="16"/>
+    </svg>
+  </button>
+  <a href="index.html">Home</a>
+  <a href="index.html#about">About</a>
+  <a href="web.html">Websites</a>
+  <a href="brighton.html">Apps</a>
+  <a href="index.html#contact" class="mm-cta">Contact</a>
+</div>
+
+<!-- ── HERO ── -->
+<section class="bp-hero">
+  <div class="wrap bp-hero-grid">
+    <div>
+      <p class="eyebrow">Mobile App &mdash; Lawn + Landscape</p>
+      <h1 class="bp-title">BRIGHTON<br><span>LAWN + LANDSCAPE</span></h1>
+      <p class="bp-lead">Run your whole crew from one app. Schedule jobs, track time and photos, run storm days, and keep every customer in the loop.</p>
+      <div class="bp-actions">
+        <a href="index.html#contact" class="btn btn-solid">Get a Demo</a>
+        <a href="#screens" class="btn btn-ghost">See the App</a>
+      </div>
+    </div>
+    <div class="bp-hero-phones" aria-hidden="true">
+      <img class="p-left"  src="brighton-app/schedule.png" alt="">
+      <img class="p-right" src="brighton-app/snow.png" alt="">
+      <img class="p-mid"   src="brighton-app/home.png" alt="">
+    </div>
+  </div>
+</section>
+
+<!-- ── SCREENS ── -->
+<section id="screens" class="section bp-showcase">
+  <div class="wrap">
+    <p class="eyebrow fu">The App</p>
+    <div class="accent-line fu"></div>
+    <h2 class="sec-h fu">BUILT FOR A COMPANY<br>THAT WORKS OUTDOORS</h2>
+
+    <div class="bp-show-grid">
+      <div class="bp-card fu">
+        <img src="brighton-app/home.png" alt="Brighton home screen showing today's jobs, crew and items needing attention" loading="lazy">
+        <h3>Your whole day at a glance</h3>
+        <p>Jobs, crew, photos to review and anything that needs you, the moment you open the app.</p>
+      </div>
+      <div class="bp-card fu" style="transition-delay:.08s">
+        <img src="brighton-app/forecast.png" alt="Brighton Forecast screen with current weather and hourly forecast" loading="lazy">
+        <h3>Brighton Forecast</h3>
+        <p>A clean public forecast for any US town, with UV, hourly detail and your own storm outlook on top.</p>
+      </div>
+      <div class="bp-card fu" style="transition-delay:.16s">
+        <img src="brighton-app/storm.png" alt="Storm outlook screen with snowfall range and town-by-town map" loading="lazy">
+        <h3>Your own storm outlook</h3>
+        <p>Post a headline, snowfall range and a map with the amounts for each town. Customers can zoom in.</p>
+      </div>
+      <div class="bp-card fu" style="transition-delay:.24s">
+        <img src="brighton-app/schedule.png" alt="Today's schedule screen with jobs assigned to crews" loading="lazy">
+        <h3>Scheduling that stays simple</h3>
+        <p>Weekly routes and one-off jobs, assigned to crews, with live status as the day moves.</p>
+      </div>
+      <div class="bp-card fu">
+        <img src="brighton-app/clock.png" alt="Time clock screen showing a crew member on the clock" loading="lazy">
+        <h3>A time clock in every pocket</h3>
+        <p>Crew clock in and out from the job site. You see hours as they happen, with no paper timesheets.</p>
+      </div>
+      <div class="bp-card fu" style="transition-delay:.08s">
+        <img src="brighton-app/snow.png" alt="Snow Mode screen tracking stops on a storm route" loading="lazy">
+        <h3>Snow Mode for storm days</h3>
+        <p>Dispatch routes, track every stop with photos, handle skip requests and tell customers when you've been.</p>
+      </div>
+      <div class="bp-card fu" style="transition-delay:.16s">
+        <img src="brighton-app/projects.png" alt="Project screen with progress photos and task checklist" loading="lazy">
+        <h3>Projects with photos and tasks</h3>
+        <p>Before-and-after photos, task checklists and crew scheduling for every build, in one place.</p>
+      </div>
+      <div class="bp-card fu" style="transition-delay:.24s">
+        <img src="brighton-app/customer.png" alt="Customer view with next visit, latest photos and service history" loading="lazy">
+        <h3>A simple customer view</h3>
+        <p>Customers see the next visit, fresh photos of the work and their service history, and can ask for more.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── WHAT IT DOES ── -->
+<section class="section">
+  <div class="wrap">
+    <p class="eyebrow fu">What It Does</p>
+    <div class="accent-line fu"></div>
+    <h2 class="sec-h fu">EIGHT THINGS<br>DONE WELL</h2>
+
+    <div class="bp-feats">
+      <div class="bp-feat fu">
+        <div class="bp-feat-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
+        <h3>Scheduling and crews</h3>
+        <p>Assign workers to jobs and weekly routes, and see the whole day with live status.</p>
+      </div>
+      <div class="bp-feat fu" style="transition-delay:.06s">
+        <div class="bp-feat-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+        <h3>Time clock</h3>
+        <p>Crew clock in and out from the job site, and you approve timesheets without paper.</p>
+      </div>
+      <div class="bp-feat fu" style="transition-delay:.12s">
+        <div class="bp-feat-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg></div>
+        <h3>Photos and projects</h3>
+        <p>Before-and-after photos and task checklists for every build, kept with the job.</p>
+      </div>
+      <div class="bp-feat fu" style="transition-delay:.18s">
+        <div class="bp-feat-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v20M4.9 6l14.2 12M19.1 6L4.9 18M9 3l3 3 3-3M9 21l3-3 3 3"/></svg></div>
+        <h3>Snow Mode</h3>
+        <p>Dispatch storm routes, track every stop with photos, and handle skip requests.</p>
+      </div>
+      <div class="bp-feat fu">
+        <div class="bp-feat-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.7-9h1.8a4.5 4.5 0 1 1 0 9z"/></svg></div>
+        <h3>Brighton Forecast</h3>
+        <p>A clean public forecast for any US town, plus your own storm outlook with a map.</p>
+        <span class="bp-soon">Widgets coming soon</span>
+      </div>
+      <div class="bp-feat fu" style="transition-delay:.06s">
+        <div class="bp-feat-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><path d="M9 22V12h6v10"/></svg></div>
+        <h3>Customer view</h3>
+        <p>Customers see their next visit, fresh photos of the work and their service history.</p>
+      </div>
+      <div class="bp-feat fu" style="transition-delay:.12s">
+        <div class="bp-feat-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+        <h3>Announcements and reports</h3>
+        <p>Message the whole crew, and let them report a problem the moment they see it.</p>
+      </div>
+      <div class="bp-feat fu" style="transition-delay:.18s">
+        <div class="bp-feat-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></div>
+        <h3>English and Spanish</h3>
+        <p>The whole app switches between English and Spanish, for the whole crew.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── HOW IT WORKS ── -->
+<section class="section bp-how">
+  <div class="wrap">
+    <p class="eyebrow fu">How It Works</p>
+    <div class="accent-line fu"></div>
+    <h2 class="sec-h fu">FROM SETUP TO A<br>HAPPY CUSTOMER</h2>
+    <div class="bp-steps">
+      <div class="bp-step fu">
+        <div class="bp-step-n">1</div>
+        <h3>Set up your company</h3>
+        <p>Add your crews and properties, then invite people with a simple link. No codes to type.</p>
+      </div>
+      <div class="bp-step fu" style="transition-delay:.1s">
+        <div class="bp-step-n">2</div>
+        <h3>Run the day</h3>
+        <p>Schedule jobs, and your crew clocks in, works through the list and sends photos from the field.</p>
+      </div>
+      <div class="bp-step fu" style="transition-delay:.2s">
+        <div class="bp-step-n">3</div>
+        <h3>Keep everyone in the loop</h3>
+        <p>Customers see their visits and photos, and your Brighton Forecast storm outlook reaches the public.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA ── -->
+<section class="section section-alt bp-cta">
+  <div class="wrap">
+    <p class="eyebrow fu">Get Started</p>
+    <div class="accent-line fu"></div>
+    <h2 class="sec-h fu">RUN YOUR CREW<br>FROM ONE APP</h2>
+    <p class="fu">Want to see Brighton running on your own company, or need an app built for yours? Tell us about it.</p>
+    <a href="index.html#contact" class="btn btn-solid fu">Contact Us</a>
+    <p class="bp-note fu">Screens shown use made-up demo data.</p>
+  </div>
+</section>
+
+<footer>
+  <span>&copy; 2026 Blue Collar Media. All rights reserved.</span>
+  <a href="https://www.instagram.com/bluecollarmedianj/" target="_blank" rel="noopener" aria-label="Instagram">
+    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+      <rect x="2" y="2" width="20" height="20" rx="5"/>
+      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+    </svg>
+  </a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

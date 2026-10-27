@@ -1,0 +1,167 @@
+/* Brighton app page — extends styles.css. App brand colors from the app's brand sheet. */
+:root {
+  --forest:  #1B3A2D;
+  --green:   #2D5A43;
+  --leaf:    #7CB342;
+  --mid:     #4A8B3F;
+  --warm:    #F6F5F1;
+  --storm:   #1D5F9A;
+}
+
+/* Nav sits over a dark hero, so keep it a light bar from the top */
+#nav { background: rgba(255,255,255,0.92); padding-top: 10px; padding-bottom: 10px; }
+.logo-wrap img { height: 64px; }
+
+/* ── HERO ── */
+.bp-hero {
+  position: relative;
+  background: radial-gradient(120% 90% at 80% 10%, #2D5A43 0%, #1B3A2D 55%, #12281f 100%);
+  color: #fff;
+  padding: 170px 0 0;
+  overflow: hidden;
+}
+.bp-hero-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: 48px;
+  align-items: end;
+}
+.bp-hero .eyebrow { color: var(--leaf); }
+.bp-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(3.4rem, 8vw, 7rem);
+  line-height: 0.92;
+  letter-spacing: 0.01em;
+  margin-bottom: 26px;
+}
+.bp-title span { color: var(--leaf); }
+.bp-lead {
+  font-size: 1.15rem;
+  line-height: 1.65;
+  color: rgba(255,255,255,0.8);
+  max-width: 520px;
+  margin-bottom: 36px;
+}
+.bp-actions { display: flex; gap: 14px; flex-wrap: wrap; padding-bottom: 80px; }
+.bp-hero .btn-ghost { color: #fff; border-color: rgba(255,255,255,0.45); }
+.bp-hero .btn-ghost:hover { border-color: var(--leaf); color: var(--leaf); }
+.bp-hero-phones {
+  position: relative;
+  height: 640px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.bp-hero-phones img {
+  position: absolute;
+  bottom: -40px;
+  width: 285px;
+  filter: drop-shadow(0 30px 50px rgba(0,0,0,0.45));
+}
+.bp-hero-phones .p-left  { left: 0;  transform: rotate(-6deg) translateY(30px); }
+.bp-hero-phones .p-mid   { left: 50%; margin-left: -150px; width: 310px; z-index: 2; }
+.bp-hero-phones .p-right { right: 0; transform: rotate(6deg) translateY(30px); }
+
+/* ── FEATURE SHOWCASE ── */
+.bp-showcase { background: var(--warm); }
+.bp-show-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 56px 32px;
+  margin-top: 70px;
+}
+.bp-card { text-align: center; }
+.bp-card img {
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto 26px;
+  display: block;
+  filter: drop-shadow(0 22px 34px rgba(27,58,45,0.22));
+  transition: transform 0.35s ease;
+}
+.bp-card:hover img { transform: translateY(-8px); }
+.bp-card h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+.bp-card p {
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--body);
+  max-width: 260px;
+  margin: 0 auto;
+}
+
+/* ── FEATURE LIST ── */
+.bp-feats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 60px;
+}
+.bp-feat {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 28px 24px 30px;
+}
+.bp-feat-ico {
+  width: 44px; height: 44px;
+  border-radius: 12px;
+  background: var(--green);
+  color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 18px;
+}
+.bp-feat h3 { font-size: 1.02rem; font-weight: 700; margin-bottom: 8px; color: var(--forest); }
+.bp-feat p  { font-size: 0.9rem; line-height: 1.6; color: var(--body); }
+.bp-soon {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 0.68rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--storm); background: #e6f0f8; padding: 4px 9px; border-radius: 99px;
+}
+
+/* ── HOW IT WORKS ── */
+.bp-how { background: var(--forest); color: #fff; }
+.bp-how .sec-h { color: #fff; }
+.bp-how .eyebrow { color: var(--leaf); }
+.bp-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-top: 60px;
+}
+.bp-step-n {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 4.5rem;
+  line-height: 1;
+  color: var(--leaf);
+  margin-bottom: 10px;
+}
+.bp-step h3 { font-size: 1.2rem; font-weight: 700; margin-bottom: 10px; }
+.bp-step p  { font-size: 0.98rem; line-height: 1.7; color: rgba(255,255,255,0.75); }
+
+/* ── CTA ── */
+.bp-cta { text-align: center; }
+.bp-cta .accent-line { margin-left: auto; margin-right: auto; }
+.bp-cta p { max-width: 560px; margin: 24px auto 38px; font-size: 1.1rem; line-height: 1.7; color: var(--body); }
+.bp-note { font-size: 0.8rem; color: var(--muted); margin-top: 26px; }
+
+@media (max-width: 1000px) {
+  .bp-hero-grid { grid-template-columns: 1fr; }
+  .bp-hero-phones { height: 520px; }
+  .bp-show-grid, .bp-feats { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 700px) {
+  .bp-hero { padding-top: 130px; }
+  .bp-actions { padding-bottom: 50px; }
+  .bp-hero-phones { height: 430px; }
+  .bp-hero-phones img { width: 190px; }
+  .bp-hero-phones .p-mid { width: 215px; margin-left: -108px; }
+  .bp-steps { grid-template-columns: 1fr; gap: 34px; }
+  .bp-show-grid { gap: 44px 16px; }
+  .bp-feats { grid-template-columns: 1fr; }
+}
