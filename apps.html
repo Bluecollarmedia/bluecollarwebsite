@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom App Development — Blue Collar Media | New Jersey</title>
+  <meta name="description" content="Need an app built fully custom for your business? Blue Collar Media plans it, builds it, and adds the features you need. See Brighton Lawn + Landscape, a custom app with worker scheduling and an owner dashboard.">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="brighton.css">
+</head>
+<body>
+
+<div id="prog"></div>
+
+<!-- ── NAV ── -->
+<nav id="nav">
+  <div class="logo-wrap">
+    <a href="index.html"><img src="logo.png" alt="Blue Collar Media"></a>
+  </div>
+  <a href="index.html" class="nav-back" aria-label="Back to home">&#8592; Home</a>
+  <button class="nav-burger" id="navBurger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="web.html">Websites</a></li>
+    <li><a href="apps.html">Apps</a></li>
+    <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mm-close" id="mmClose" aria-label="Close menu">
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+      <line x1="2" y1="2" x2="16" y2="16"/>
+      <line x1="16" y1="2" x2="2" y2="16"/>
+    </svg>
+  </button>
+  <a href="index.html">Home</a>
+  <a href="index.html#about">About</a>
+  <a href="web.html">Websites</a>
+  <a href="apps.html">Apps</a>
+  <a href="index.html#contact" class="mm-cta">Contact</a>
+</div>
+
+<!-- ── HERO ── -->
+<section class="bp-hero">
+  <div class="wrap bp-hero-grid">
+    <div>
+      <p class="eyebrow">Custom Apps</p>
+      <h1 class="bp-title">NEED AN APP<br><span>BUILT FULLY<br>CUSTOM?</span></h1>
+      <p class="bp-lead">We plan it out with you. We build it. And we add the features your business needs. An app shaped around your jobs, your crew and your customers.</p>
+      <div class="bp-actions">
+        <a href="index.html#contact" class="btn btn-solid">Contact Us</a>
+        <a href="#example" class="btn btn-ghost">See an Example</a>
+      </div>
+    </div>
+    <div class="bp-hero-phones" aria-hidden="true">
+      <img class="p-left"  src="brighton-app/schedule.png" alt="">
+      <img class="p-right" src="brighton-app/assign.png" alt="">
+      <img class="p-mid"   src="brighton-app/home.png" alt="">
+    </div>
+  </div>
+</section>
+
+<!-- ── PROCESS ── -->
+<section class="section bp-how">
+  <div class="wrap">
+    <p class="eyebrow fu">How It Works</p>
+    <div class="accent-line fu"></div>
+    <h2 class="sec-h fu">PLAN IT. BUILD IT.<br>MAKE IT YOURS.</h2>
+    <div class="bp-steps">
+      <div class="bp-step fu">
+        <div class="bp-step-n">1</div>
+        <h3>We plan it out</h3>
+        <p>You tell us how your business runs: your jobs, your crew, your customers. We map out the app around that, before anything gets built.</p>
+      </div>
+      <div class="bp-step fu" style="transition-delay:.1s">
+        <div class="bp-step-n">2</div>
+        <h3>We build it</h3>
+        <p>A real app for iPhone and Android, built from scratch for you. No templates, and nothing you don't need.</p>
+      </div>
+      <div class="bp-step fu" style="transition-delay:.2s">
+        <div class="bp-step-n">3</div>
+        <h3>We add what you need</h3>
+        <p>Need a new feature next month? We add it. The app grows with your business.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── EXAMPLE: CORE ── -->
+<section id="example" class="section bp-showcase">
+  <div class="wrap">
+    <p class="eyebrow fu">Example &mdash; Brighton Lawn + Landscape</p>
+    <div class="accent-line fu"></div>
+    <h2 class="sec-h fu">BUILT AROUND HOW A<br>LANDSCAPING COMPANY RUNS</h2>
+    <p class="bp-intro fu">Brighton is a custom app we made for a real landscaping and snow company. The core is simple: schedule your workers and run the whole day from one owner dashboard.</p>
+
+    <div class="bp-row fu">
+      <div class="bp-row-img"><img src="brighton-app/home.png" alt="Owner dashboard showing today's jobs, crew and items needing attention" loading="lazy"></div>
+      <div class="bp-row-txt">
+        <p class="bp-kicker">Owner dashboard</p>
+        <h3>An owner dashboard that tells you everything</h3>
+        <p>Today's jobs, who is working, what needs your attention and photos to review, the moment you open the app.</p>
+      </div>
+    </div>
+
+    <div class="bp-row bp-row-flip fu">
+      <div class="bp-row-img"><img src="brighton-app/assign.png" alt="Schedule a worker screen with worker, job, date and time" loading="lazy"></div>
+      <div class="bp-row-txt">
+        <p class="bp-kicker">Schedule workers</p>
+        <h3>Schedule a worker in seconds</h3>
+        <p>Pick the person, the job and the time. They get a notification, and conflicts are caught for you.</p>
+      </div>
+    </div>
+
+    <div class="bp-row fu">
+      <div class="bp-row-img"><img src="brighton-app/schedule.png" alt="Today's schedule with every crew and job status" loading="lazy"></div>
+      <div class="bp-row-txt">
+        <p class="bp-kicker">Live schedule</p>
+        <h3>See every crew, every job, live</h3>
+        <p>Weekly routes and one-off jobs, assigned to crews, with live status as the day moves.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── EXAMPLE: MORE ── -->
+<section class="section">
+  <div class="wrap">
+    <p class="eyebrow fu">And More</p>
+    <div class="accent-line fu"></div>
+    <h2 class="sec-h fu">EVERYTHING ELSE THEY<br>NEEDED, ADDED IN</h2>
+    <div class="bp-show-grid bp-show-5">
+      <div class="bp-card fu">
+        <img src="brighton-app/clock.png" alt="Time clock screen" loading="lazy">
+        <h3>A time clock in every pocket</h3>
+        <p>Crew clock in and out from the job site. You see hours as they happen, with no paper timesheets.</p>
+      </div>
+      <div class="bp-card fu" style="transition-delay:.08s">
+        <img src="brighton-app/projects.png" alt="Project screen with photos and task checklist" loading="lazy">
+        <h3>Projects with photos and tasks</h3>
+        <p>Before-and-after photos, task checklists and crew scheduling for every build, in one place.</p>
+      </div>
+      <div class="bp-card fu" style="transition-delay:.16s">
+        <img src="brighton-app/customer.png" alt="Customer view with next visit and service history" loading="lazy">
+        <h3>A simple customer view</h3>
+        <p>Customers see the next visit, fresh photos of the work and their service history, and can ask for more.</p>
+      </div>
+      <div class="bp-card fu" style="transition-delay:.24s">
+        <img src="brighton-app/snow.png" alt="Snow Mode route tracking" loading="lazy">
+        <h3>Snow Mode for storm days</h3>
+        <p>Dispatch routes, track every stop with photos, handle skip requests and tell customers when you've been.</p>
+      </div>
+      <div class="bp-card fu" style="transition-delay:.32s">
+        <img src="brighton-app/forecast.png" alt="Public weather forecast screen" loading="lazy">
+        <h3>A bonus: a public forecast</h3>
+        <p>A small extra for customers: a clean forecast for any US town, with your own storm outlook on top.</p>
+      </div>
+    </div>
+    <p class="bp-note fu" style="text-align:center">Screens shown use made-up demo data.</p>
+  </div>
+</section>
+
+<!-- ── CTA ── -->
+<section class="section bp-how bp-cta-dark">
+  <div class="wrap">
+    <p class="eyebrow fu">Built by Blue Collar Media</p>
+    <h2 class="sec-h fu">NEED AN APP BUILT<br>FULLY CUSTOM FOR YOU?</h2>
+    <p class="bp-cta-p fu">Brighton was made around how a landscaping company actually runs. We build apps shaped around your business the same way: your jobs, your crew, your customers.</p>
+    <a href="index.html#contact" class="btn btn-solid fu">Contact Us</a>
+  </div>
+</section>
+
+<footer>
+  <span>&copy; 2026 Blue Collar Media. All rights reserved.</span>
+  <a href="https://www.instagram.com/bluecollarmedianj/" target="_blank" rel="noopener" aria-label="Instagram">
+    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+      <rect x="2" y="2" width="20" height="20" rx="5"/>
+      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+    </svg>
+  </a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
