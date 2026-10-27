@@ -3,10 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blue Collar Media</title>
+  <title>Blue Collar Media | Video Production & Web Design — New Jersey</title>
+  <meta name="description" content="Blue Collar Media is a New Jersey video production and web design company built for businesses that do real work. Promotional video, custom websites, and the full package deal — available nationwide.">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,155 +18,242 @@
 <!-- ── NAV ── -->
 <nav id="nav">
   <div class="logo-wrap">
-    <img src="logo.png" alt="Blue Collar Media">
-    <svg id="nav-gear" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-      <path d="M19.14 12.94c.04-.3.06-.62.06-.94s-.02-.64-.07-.94l2.03-1.58a.49.49 0 0 0 .12-.61l-1.92-3.32a.49.49 0 0 0-.59-.22l-2.39.96a7.3 7.3 0 0 0-1.62-.94l-.36-2.54a.48.48 0 0 0-.48-.41h-3.84a.48.48 0 0 0-.47.41l-.36 2.54a7.3 7.3 0 0 0-1.62.94l-2.39-.96a.48.48 0 0 0-.59.22L2.74 8.87a.48.48 0 0 0 .12.61l2.03 1.58c-.05.3-.07.63-.07.94s.02.64.07.94l-2.03 1.58a.48.48 0 0 0-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.47.41h3.84c.24 0 .44-.17.48-.41l.36-2.54a7.3 7.3 0 0 0 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32a.48.48 0 0 0-.12-.61l-2.03-1.58zM12 15.6A3.6 3.6 0 1 1 12 8.4a3.6 3.6 0 0 1 0 7.2z"/>
-    </svg>
+    <a href="index.html"><img src="logo.png" alt="Blue Collar Media"></a>
   </div>
+  <button class="nav-burger" id="navBurger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
+    <li><a href="web.html">Websites</a></li>
     <li><a href="#services">Services</a></li>
-    <li><a href="#reel">Work</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#reel">Video</a></li>
+    <li><a href="#contact" class="nav-cta">Contact</a></li>
   </ul>
 </nav>
 
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mm-close" id="mmClose" aria-label="Close menu">
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+      <line x1="2" y1="2" x2="16" y2="16"/>
+      <line x1="16" y1="2" x2="2" y2="16"/>
+    </svg>
+  </button>
+  <a href="#about">About</a>
+  <a href="web.html">Websites</a>
+  <a href="#services">Services</a>
+  <a href="#reel">Video</a>
+  <a href="#contact" class="mm-cta">Contact</a>
+</div>
+
 <!-- ── HERO ── -->
 <section id="hero">
-  <div class="hero-bg">
-    <!-- Add hero.mp4 to repo root to activate: -->
-    <!-- <video autoplay muted loop playsinline><source src="hero.mp4" type="video/mp4"></video> -->
+  <div class="hero-media" aria-hidden="true">
+    <video autoplay muted loop playsinline>
+      <source src="hero.mp4" type="video/mp4">
+    </video>
+    <div class="hero-media-veil"></div>
   </div>
-  <svg id="hero-gear" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-    <path d="M19.14 12.94c.04-.3.06-.62.06-.94s-.02-.64-.07-.94l2.03-1.58a.49.49 0 0 0 .12-.61l-1.92-3.32a.49.49 0 0 0-.59-.22l-2.39.96a7.3 7.3 0 0 0-1.62-.94l-.36-2.54a.48.48 0 0 0-.48-.41h-3.84a.48.48 0 0 0-.47.41l-.36 2.54a7.3 7.3 0 0 0-1.62.94l-2.39-.96a.48.48 0 0 0-.59.22L2.74 8.87a.48.48 0 0 0 .12.61l2.03 1.58c-.05.3-.07.63-.07.94s.02.64.07.94l-2.03 1.58a.48.48 0 0 0-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.47.41h3.84c.24 0 .44-.17.48-.41l.36-2.54a7.3 7.3 0 0 0 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32a.48.48 0 0 0-.12-.61l-2.03-1.58zM12 15.6A3.6 3.6 0 1 1 12 8.4a3.6 3.6 0 0 1 0 7.2z"/>
-  </svg>
-  <svg id="hero-gear2" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-    <path d="M19.14 12.94c.04-.3.06-.62.06-.94s-.02-.64-.07-.94l2.03-1.58a.49.49 0 0 0 .12-.61l-1.92-3.32a.49.49 0 0 0-.59-.22l-2.39.96a7.3 7.3 0 0 0-1.62-.94l-.36-2.54a.48.48 0 0 0-.48-.41h-3.84a.48.48 0 0 0-.47.41l-.36 2.54a7.3 7.3 0 0 0-1.62.94l-2.39-.96a.48.48 0 0 0-.59.22L2.74 8.87a.48.48 0 0 0 .12.61l2.03 1.58c-.05.3-.07.63-.07.94s.02.64.07.94l-2.03 1.58a.48.48 0 0 0-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.47.41h3.84c.24 0 .44-.17.48-.41l.36-2.54a7.3 7.3 0 0 0 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32a.48.48 0 0 0-.12-.61l-2.03-1.58zM12 15.6A3.6 3.6 0 1 1 12 8.4a3.6 3.6 0 0 1 0 7.2z"/>
-  </svg>
-  <div class="hero-overlay"></div>
   <div class="hero-content">
+    <p class="hero-eyebrow">New Jersey &middot; Available Nationwide</p>
     <h1 class="hero-title">BLUE COLLAR<br><span class="accent">MEDIA</span></h1>
+    <div class="hero-rule"></div>
     <p class="hero-sub">Video Production &nbsp;&middot;&nbsp; Web Design &nbsp;&middot;&nbsp; The Package Deal</p>
-    <a href="#contact" class="hero-cta">Work With Us</a>
+    <div class="hero-actions">
+      <a href="#contact" class="btn btn-solid">Work With Us</a>
+      <a href="#reel" class="btn btn-ghost">See Our Work</a>
+    </div>
   </div>
-  <div class="scroll-cue"><div class="chev"></div></div>
-
-  <!-- Canvas ink pour — thick organic page break, covers full width -->
-  <canvas id="hero-ink" aria-hidden="true"></canvas>
+  <a href="#about" class="scroll-cue" aria-label="Scroll down"><div class="chev"></div></a>
 </section>
 
+<!-- Everything below rides up OVER the pinned hero video as you scroll -->
+<div class="page-body">
+
 <!-- ── ABOUT ── -->
-<section id="about">
+<section id="about" class="section">
   <div class="wrap">
-    <p class="eyebrow fu">What We Do</p>
     <div class="about-inner">
       <div class="about-left fl">
-        <div class="about-accent-line"></div>
+        <p class="eyebrow">What We Do</p>
+        <div class="accent-line"></div>
         <h2 class="sec-h">BUILT FOR BUSINESSES THAT DO REAL WORK</h2>
-        <span class="about-tag">New Jersey &mdash; Available Nationwide</span>
+        <span class="tag">New Jersey &mdash; Available Nationwide</span>
       </div>
       <div class="about-right fu" style="transition-delay:.12s">
         <p>Blue Collar Media is built for businesses that do real work. We create promotional and advertising video content for companies across every industry — capturing what makes your brand worth watching.</p>
         <p>From trades and contractors to any business that needs to be seen, we handle the camera, the story, and the strategy. We also build websites that match the quality of your work.</p>
-        <p>No fluff. No filler. Just content that converts.</p>
+        <p class="lead">No fluff. No filler. Just content that converts.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ── SERVICES ── -->
-<section id="services" class="section-rule">
+<section id="services" class="section section-alt">
   <div class="wrap">
     <p class="eyebrow fu">What We Offer</p>
     <h2 class="sec-h fu">SERVICES</h2>
     <div class="svc-list">
 
-      <div class="svc-item fu">
+      <a href="#contact" class="svc-item fu">
         <div class="svc-num">01</div>
         <div class="svc-body">
           <div class="svc-name">Video &amp; Promo Production</div>
           <p class="svc-desc">Promotional and advertising video content for businesses of all kinds. We make your brand look as good as it is — every frame, every cut, every story told the right way.</p>
         </div>
-      </div>
+        <div class="svc-arrow">&rarr;</div>
+      </a>
 
-      <div class="svc-item fu" style="transition-delay:.12s">
+      <a href="web.html" class="svc-item fu" style="transition-delay:.1s">
         <div class="svc-num">02</div>
         <div class="svc-body">
           <div class="svc-name">Web Design</div>
           <p class="svc-desc">Clean, fast websites built to represent your business and convert visitors into clients. No bloat, no templates — built from scratch to look the part and do the work.</p>
         </div>
-      </div>
+        <div class="svc-arrow">&rarr;</div>
+      </a>
 
-      <div class="svc-item fu" style="transition-delay:.24s">
+      <a href="#contact" class="svc-item fu" style="transition-delay:.2s">
         <div class="svc-num">03</div>
         <div class="svc-body">
           <div class="svc-name">The Package Deal</div>
           <p class="svc-desc">We come to you. We shoot your footage. We build your site around it. One team, one vision — video and website delivered together so every pixel matches the work.</p>
         </div>
-      </div>
+        <div class="svc-arrow">&rarr;</div>
+      </a>
 
     </div>
   </div>
 </section>
 
-<!-- ── SHOWREEL ── -->
-<section id="reel" class="section-rule">
-  <div class="wrap">
+<!-- ── WORK / SHOWREEL ── -->
+<section id="reel" class="section">
+  <div class="wrap reel-head">
     <p class="eyebrow fu">Our Reel</p>
     <h2 class="sec-h fu">THE WORK</h2>
   </div>
-  <div class="reel-frame" id="reelFrame">
-    <!-- Crossfade slideshow slides -->
-    <div class="slide slide-1 active">
-      <div class="slide-label">VIDEO PRODUCTION</div>
-      <div class="slide-sub">PROMO &nbsp;·&nbsp; ADVERTISING &nbsp;·&nbsp; BRANDED CONTENT</div>
-    </div>
-    <div class="slide slide-2">
-      <div class="slide-label">WEB DESIGN</div>
-      <div class="slide-sub">CUSTOM BUILDS &nbsp;·&nbsp; FAST &nbsp;·&nbsp; CONVERSION FOCUSED</div>
-    </div>
-    <div class="slide slide-3">
-      <div class="slide-label">PROMO &amp; ADVERTISING</div>
-      <div class="slide-sub">TELLING YOUR STORY &nbsp;·&nbsp; EVERY INDUSTRY</div>
-    </div>
-    <div class="slide slide-4">
-      <div class="slide-label">THE PACKAGE DEAL</div>
-      <div class="slide-sub">VIDEO + WEBSITE &nbsp;·&nbsp; ONE TEAM &nbsp;·&nbsp; ONE VISION</div>
-    </div>
+  <div class="wrap reel-grid">
 
-    <!-- Progress dots -->
-    <div class="reel-dots" id="reelDots">
-      <div class="dot on"></div>
-      <div class="dot"></div>
-      <div class="dot"></div>
-      <div class="dot"></div>
-    </div>
-
-    <!-- Placeholder (hidden when video is present) -->
-    <div class="reel-placeholder">
-      <div class="reel-icon">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>
+    <!-- Portrait 01 -->
+    <div class="portrait-card fu">
+      <div class="portrait-frame">
+        <video class="frame-video" muted loop playsinline>
+          <source src="construction.mp4" type="video/mp4">
+        </video>
+        <div class="play-overlay">
+          <button class="play-btn" aria-label="Play video">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>
+          </button>
+        </div>
+        <button class="sound-btn" aria-label="Toggle sound">
+          <svg class="icon-muted" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="11,5 6,9 2,9 2,15 6,15 11,19"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>
+          <svg class="icon-sound" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="display:none"><polygon points="11,5 6,9 2,9 2,15 6,15 11,19"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+        </button>
+        <div class="video-controls">
+          <button class="vc-playpause" aria-label="Play/Pause">
+            <svg class="icon-play" width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>
+            <svg class="icon-pause" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" style="display:none"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+          </button>
+          <div class="vc-bar"><div class="vc-fill"></div></div>
+          <button class="vc-fullscreen" aria-label="Full screen">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M8 3H5a2 2 0 0 0-2 2v3"/><path d="M21 8V5a2 2 0 0 0-2-2h-3"/><path d="M3 16v3a2 2 0 0 0 2 2h3"/><path d="M16 21h3a2 2 0 0 0 2-2v-3"/></svg>
+          </button>
+        </div>
+        <button class="vc-exit-fs" aria-label="Exit full screen">
+          <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="2" y1="2" x2="16" y2="16"/><line x1="16" y1="2" x2="2" y2="16"/></svg>
+        </button>
       </div>
-      <p>Your reel goes here &mdash; drop in a video file to activate</p>
+      <div class="portrait-info">
+        <p class="portrait-label">01 &mdash; Construction Highlights</p>
+        <p class="portrait-desc">Fast-paced, on-site footage capturing the build, the crew, and the craft — the kind of content that shows what you do better than any description could.</p>
+      </div>
     </div>
 
-    <!-- To add your reel: uncomment below and add your compiled video file -->
-    <!-- <video autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;">
-      <source src="reel.mp4" type="video/mp4">
-    </video> -->
+    <!-- Portrait 02 -->
+    <div class="portrait-card fu" style="transition-delay:.1s">
+      <div class="portrait-frame">
+        <video class="frame-video" muted loop playsinline>
+          <source src="corporate.mp4" type="video/mp4">
+        </video>
+        <div class="play-overlay">
+          <button class="play-btn" aria-label="Play video">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>
+          </button>
+        </div>
+        <button class="sound-btn" aria-label="Toggle sound">
+          <svg class="icon-muted" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="11,5 6,9 2,9 2,15 6,15 11,19"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>
+          <svg class="icon-sound" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="display:none"><polygon points="11,5 6,9 2,9 2,15 6,15 11,19"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+        </button>
+        <div class="video-controls">
+          <button class="vc-playpause" aria-label="Play/Pause">
+            <svg class="icon-play" width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>
+            <svg class="icon-pause" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" style="display:none"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+          </button>
+          <div class="vc-bar"><div class="vc-fill"></div></div>
+          <button class="vc-fullscreen" aria-label="Full screen">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M8 3H5a2 2 0 0 0-2 2v3"/><path d="M21 8V5a2 2 0 0 0-2-2h-3"/><path d="M3 16v3a2 2 0 0 0 2 2h3"/><path d="M16 21h3a2 2 0 0 0 2-2v-3"/></svg>
+          </button>
+        </div>
+        <button class="vc-exit-fs" aria-label="Exit full screen">
+          <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="2" y1="2" x2="16" y2="16"/><line x1="16" y1="2" x2="2" y2="16"/></svg>
+        </button>
+      </div>
+      <div class="portrait-info">
+        <p class="portrait-label">02 &mdash; Corporate &amp; Brand Films</p>
+        <p class="portrait-desc">Polished, professional videos that represent your brand at the highest level — built for companies that want to be taken seriously.</p>
+      </div>
+    </div>
+
+    <!-- Landscape 03 -->
+    <div class="landscape-card fu" style="transition-delay:.2s">
+      <div class="landscape-frame">
+        <video class="frame-video" autoplay muted loop playsinline>
+          <source src="realestate.mp4" type="video/mp4">
+        </video>
+        <div class="play-overlay hidden">
+          <button class="play-btn" aria-label="Play video">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>
+          </button>
+        </div>
+        <button class="sound-btn" aria-label="Toggle sound">
+          <svg class="icon-muted" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="11,5 6,9 2,9 2,15 6,15 11,19"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>
+          <svg class="icon-sound" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="display:none"><polygon points="11,5 6,9 2,9 2,15 6,15 11,19"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+        </button>
+        <div class="video-controls">
+          <button class="vc-playpause" aria-label="Play/Pause">
+            <svg class="icon-play" width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>
+            <svg class="icon-pause" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" style="display:none"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+          </button>
+          <div class="vc-bar"><div class="vc-fill"></div></div>
+          <button class="vc-fullscreen" aria-label="Full screen">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M8 3H5a2 2 0 0 0-2 2v3"/><path d="M21 8V5a2 2 0 0 0-2-2h-3"/><path d="M3 16v3a2 2 0 0 0 2 2h3"/><path d="M16 21h3a2 2 0 0 0 2-2v-3"/></svg>
+          </button>
+        </div>
+        <button class="vc-exit-fs" aria-label="Exit full screen">
+          <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="2" y1="2" x2="16" y2="16"/><line x1="16" y1="2" x2="2" y2="16"/></svg>
+        </button>
+      </div>
+      <div class="portrait-info">
+        <p class="portrait-label">03 &mdash; Real Estate Walkthrough</p>
+        <p class="portrait-desc">Smooth, cinematic walkthroughs that make every property look its best — giving buyers a real feel for the space before they ever step inside.</p>
+      </div>
+    </div>
+
   </div>
-  <div style="height:80px"></div>
+  <p class="reel-note">Every project is different — these are just a few styles we work in. Need something specific? <a href="#contact">Contact us below.</a></p>
 </section>
 
 <!-- ── CONTACT ── -->
-<section id="contact" class="section-rule">
+<section id="contact" class="section section-alt">
   <div class="wrap">
-    <p class="eyebrow fu">Let&rsquo;s Work Together</p>
-    <h2 class="sec-h fu">CONTACT</h2>
     <div class="contact-grid">
 
       <div class="fl">
-        <p class="ci-head">Reach Out</p>
+        <p class="eyebrow">Let&rsquo;s Work Together</p>
+        <h2 class="sec-h">CONTACT</h2>
+        <p class="contact-intro">Tell us about your project. We&rsquo;ll bring the camera, the story, and the website.</p>
+
         <div class="ci-row">
           <div class="ci-icon">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
@@ -190,11 +279,11 @@
               <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
             </svg>
           </div>
-          <a href="https://instagram.com/bluecollarmedianj" target="_blank" rel="noopener">@bluecollarmedianj</a>
+          <a href="https://www.instagram.com/bluecollarmedianj/" target="_blank" rel="noopener">@bluecollarmedianj</a>
         </div>
       </div>
 
-      <form class="fu" action="mailto:bluecollarmedianj@gmail.com" method="POST" enctype="text/plain">
+      <form class="fu" id="contact-form" action="https://formspree.io/f/xykqzopl" method="POST">
         <div class="fg">
           <label for="fname">Name</label>
           <input type="text" id="fname" name="name" placeholder="Your name" required>
@@ -207,7 +296,8 @@
           <label for="fmsg">Message</label>
           <textarea id="fmsg" name="message" placeholder="Tell us about your project..." required></textarea>
         </div>
-        <button type="submit" class="form-btn">Send Message</button>
+        <button type="submit" class="btn btn-solid form-btn" id="form-btn">Send Message</button>
+        <p id="form-success" style="display:none; font-size:0.85rem; font-weight:600; color:var(--accent); margin-top:4px;">Message sent! We&rsquo;ll be in touch soon.</p>
       </form>
 
     </div>
@@ -217,7 +307,7 @@
 <!-- ── FOOTER ── -->
 <footer>
   <span>&copy; 2026 Blue Collar Media. All rights reserved.</span>
-  <a href="https://instagram.com/bluecollarmedianj" target="_blank" rel="noopener" aria-label="Instagram">
+  <a href="https://www.instagram.com/bluecollarmedianj/" target="_blank" rel="noopener" aria-label="Instagram">
     <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
       <rect x="2" y="2" width="20" height="20" rx="5"/>
       <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
@@ -225,6 +315,8 @@
     </svg>
   </a>
 </footer>
+
+</div><!-- /page-body -->
 
 <script src="script.js"></script>
 </body>
